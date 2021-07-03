@@ -1,0 +1,17 @@
+/* =========================
+    #DOTS VECTOR
+============================ */
+@include md-min {
+    .dots-vector {
+        position: absolute;
+        &:after {
+            content: url("/images/vectors/dotted-bg.svg");
+        }
+        &__right {
+            right: 0;
+        }
+        &__left {
+            left: 0;
+        }
+    }
+}

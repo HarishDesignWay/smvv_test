@@ -1,0 +1,29 @@
+.primary-button {
+    border-radius: 11px;
+    background-color: $secondary-color;
+    border: 0;
+    box-shadow: none;
+    color: #fff;
+    padding: 20px 24px;
+    @include xs {
+        padding: 14px 24px;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: darken($color: $secondary-color, $amount: 6);
+
+        color: #fff;
+        box-shadow: none;
+    }
+    img {
+        margin-left: 105px;
+    }
+    &--full-width {
+        width: 100%;
+        font-size: 12px;
+        font-weight: bold;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}

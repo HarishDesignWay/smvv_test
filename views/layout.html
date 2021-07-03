@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- #Document Meta
+        ============================================= -->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- #Page Title
+        ============================================= -->
+    <title>{{meta.title}}</title>
+
+    <!-- #Stylesheets
+        ============================================= -->
+    <!-- ==#BOOTSTRAP== -->
+    <link href="/packages/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!-- ==#FONTS==-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- ==#SLICK== -->
+    <link rel="stylesheet" type="text/css" href="/packages/slick/slick.min.css" media="all" />
+
+    <!-- ==#AOS== -->
+    <link rel="stylesheet" href="/packages/aos/aos.css">
+
+    <!-- ==#MAIN STYLESHEET== -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/css/style.css" media="all">
+
+    <!-- ==#JQUERY== -->
+    <script type="text/javascript" src="/packages/jquery.min.js"></script>
+
+    <!-- ==#AOS -->
+    <script type="text/javascript" src="/packages/aos/aos.js"></script>
+
+    <!-- #FAV ICONS
+        ======================================= -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ee5134">
+    <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ee5134">
+</head>
+
+<body class="position-relative" data-spy="scroll" data-target="#siteNav" data-offset="50">
+    <script>
+        AOS.init({
+            once: true,
+            easing: "linear",
+            duration: 300,
+            delay: 200,
+        });
+    </script>
+    <!-- ====#PAGE LOADER===== -->
+    <div id="pageLoader" class="lds-ripple">
+        <div></div>
+        <div></div>
+    </div>
+    <!-- ==========================
+        #NAVBAR
+    ============================ -->
+    <div class="navbar-spacer">
+        <nav id="siteNav" class="navbar navbar-expand-lg fixed-top  site-navbar bg-white py-0">
+            <div class="container site-container site-navbar-container">
+                <a class="navbar-brand py-1" href="/">
+                    <!-- <img class="site-navbar__logo" src="/images/smvv-edutech.svg"
+                        alt="SMMVV EDUTECH ADVISORY PVT LTD" /> -->
+                    <div class="site-logo">
+                        <img class="site-logo__media img-fluid" src="/images/logos/smvv-edutech.svg"
+                            alt="SMMVV EDUTECH ADVISORY PVT LTD">
+                        <img class="site-logo__media-text img-fluid" src="/images/logos/smvv-text.svg"
+                            alt="SMMVV EDUTECH ADVISORY PVT LTD">
+                    </div>
+                    <p class="navbar-brand__tagline">Let’s be Rich !</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
+                    <ul
+                        class="site-navbar__content navbar-nav mx-auto ml-lg-auto mr-lg-3 mt-3 mt-lg-0 align-items-center">
+                        <li class="nav-item my-1 my-lg-0">
+                            <a class="nav-link btn active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item my-1 my-lg-0">
+                            <a class="nav-link btn shadow-none" href="#services">Service</a>
+                        </li>
+                        <li class="nav-item my-1 my-lg-0">
+                            <a class="nav-link btn shadow-none" href="#about">About
+                                Us</a>
+                        </li>
+                        <li class="nav-item my-1 my-lg-0">
+                            <a class="nav-link btn shadow-none" href="#careers">Careers</a>
+                        </li>
+                        <li class="nav-item my-1 my-lg-0">
+                            <a class="nav-link btn shadow-none" href="#ContactUs">Contact Us</a>
+                        </li>
+                        <li class="nav-item my-1 my-lg-0">
+                            <a class="btn primary-button mb-3 my-lg-0" href="/login">LOG IN</a>
+                        </li>
+                    </ul>
+                    <!-- <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Item2</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a> -->
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--========================
+        #END NAVBAR
+    ============================ -->
+    <!-- =======================
+            #BODY
+    ============================ -->
+    <div class="body-wrapper">
+        {{{body}}}
+    </div>
+    <footer class="site-footer">
+        <div class="container site-container">
+            <div class="row">
+                <div class="col-12 col-md-5 col-lg-7 col-xl-6">
+                    <p class="font-size-18 footer-text">
+                        SMVV Eductech Advisory Pvt Ltd<br>
+                        815,817, Gera's Imperium<br>
+                        Star, Patto, Panjim,<br>
+                        GA 403001
+                    </p>
+                </div>
+                <div class="col-12 col-md-7 col-lg-5 mt-4 mt-md-0">
+                    <ul class="row footer-links-wrapper">
+                        <li class="col-6"><a class="footer-link" href="#about">About Us</a></li>
+                        <li class="col-6"><a class="footer-link" href="#services">Our Services</a></li>
+                        <li class="col-6"><a class="footer-link" href="#contactUs">Contact</a></li>
+                        <li class="col-6"><a class="footer-link" href="#careers">Careers</a></li>
+                        <li class="col-6"><a class="footer-link" href="#testimonial">Testimonials</a></li>
+                        <li class="col-6"><a class="footer-link" href="terms&conditions">Terms And Conditions</a></li>
+                        <li class="col-6"><a class="footer-link" href="policy">Privacy Policy</a></li>
+                        <li class="col-6"><a class="footer-link" href="refund-policy">Refund Policy</a></li>
+
+                        <li class="col-6 footer-social-icons">
+                            <div class="social-icons fill-secondary mt-0">
+                                <a class="social-icons__link" href="https://www.facebook.com/smvvedutech.advisory"
+                                    target="_blank">
+                                    <svg class="social-icons__media fill-secondary">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a class="social-icons__link"
+                                    href="https://instagram.com/smvv_edutech?utm_medium=copy_link" target="_blank">
+                                    <svg class="social-icons__media fill-secondary">
+                                        <use xlink:href="#instagram"></use>
+                                    </svg>
+                                </a>
+                                <a class="social-icons__link"
+                                    href="https://www.linkedin.com/company/smvv-edutech-advisory-pvt-ltd"
+                                    target="_blank">
+                                    <svg class="social-icons__media fill-secondary">
+                                        <use xlink:href="#linkedin"></use>
+                                    </svg>
+                                </a>
+                                <!-- <a class="social-icons__link"  href="" target="_blank">
+                                <svg class="social-icons__media fill-secondary">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                                </a>
+                                    <a class="social-icons__link"  href="" target="_blank">
+                                <svg class="social-icons__media fill-secondary">
+                                    <use xlink:href="#youtube"></use>
+                                </svg>
+                                </a> -->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- =======================
+    #SVG SPRITES
+============================ -->
+    <svg width="0" height="0" class="d-none">
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" id="facebook">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.619 24C6.044 24 .714 18.67.714 12.095.714 5.52 6.044.19 12.62.19c6.575 0 11.905 5.33 11.905 11.905C24.524 18.67 19.194 24 12.619 24zm1.117-15.246c0-.581.057-.892.926-.892h1.16V5.635h-1.857c-2.23 0-3.015 1.08-3.015 2.896v1.337H9.558v2.226h1.392v6.459h2.783v-6.46h1.857l.246-2.225h-2.103l.003-1.114z">
+            </path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="instagram">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.967 23.553C5.659 23.553.525 18.415.525 12.1.525 5.787 5.66.648 11.967.648c6.31 0 11.444 5.14 11.444 11.452 0 6.315-5.134 11.453-11.444 11.453zm6.509-12.789V8.107a2.519 2.519 0 00-2.516-2.519H7.974A2.518 2.518 0 005.46 8.107v7.99a2.518 2.518 0 002.515 2.516h7.985a2.518 2.518 0 002.516-2.515v-5.334zm-2.516 6.58H7.974c-.69 0-1.247-.557-1.247-1.246v-5.334H8.67a3.56 3.56 0 003.297 4.899c1.965 0 3.56-1.6 3.56-3.563 0-.471-.096-.924-.263-1.336h1.942v5.334c0 .689-.558 1.246-1.246 1.246zM14.761 7.095l1.92-.007h.288v2.208l-2.199.006-.009-2.207zm-2.795 7.298a2.294 2.294 0 01-2.29-2.293c.001-.498.16-.959.433-1.336a2.283 2.283 0 013.716 0c.27.377.432.838.432 1.336a2.294 2.294 0 01-2.291 2.293z">
+            </path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="linkedin">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.905 24C5.33 24 0 18.67 0 12.095 0 5.52 5.33.19 11.905.19 18.48.19 23.81 5.52 23.81 12.095 23.81 18.67 18.48 24 11.905 24zm-5.639-6.11h2.626v-7.363H6.266v7.362zm1.33-10.91c-.898 0-1.485.549-1.485 1.271 0 .707.57 1.272 1.45 1.272h.018c.916 0 1.486-.565 1.486-1.272-.017-.722-.57-1.271-1.468-1.271zm10.764 6.689c0-2.262-1.296-3.315-3.023-3.315-1.395 0-2.017.715-2.366 1.217v-1.044h-2.627c.035.692 0 7.362 0 7.362h2.627v-4.11c0-.22.017-.441.086-.597.19-.44.622-.896 1.347-.896.95 0 1.33.676 1.33 1.666v3.937h2.626v-4.22zm-5.407-2.074l.018-.024v.024h-.018z">
+            </path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="twitter">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.952 23.81C5.378 23.81.048 18.48.048 11.905.048 5.33 5.378 0 11.952 0c6.575 0 11.905 5.33 11.905 11.905 0 6.575-5.33 11.905-11.905 11.905zm6.754-16.805a6.155 6.155 0 01-1.863.666 3.018 3.018 0 00-2.139-.868c-1.619 0-2.933 1.23-2.933 2.748 0 .216.026.426.077.626-2.437-.114-4.598-1.208-6.044-2.87a2.61 2.61 0 00-.397 1.38c0 .954.518 1.795 1.305 2.288a3.07 3.07 0 01-1.328-.344v.035c0 1.331 1.01 2.442 2.351 2.694a3.194 3.194 0 01-1.324.048c.373 1.09 1.456 1.885 2.74 1.908a6.138 6.138 0 01-3.642 1.176c-.237 0-.47-.013-.7-.038a8.713 8.713 0 004.495 1.234c5.393 0 8.342-4.188 8.342-7.818 0-.12-.003-.238-.009-.356a5.773 5.773 0 001.464-1.422 6.167 6.167 0 01-1.684.432 2.8 2.8 0 001.29-1.52z">
+            </path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 24" id="youtube">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.574 23.081C5.425 23.081.443 18.1.443 11.953c0-6.148 4.982-11.13 11.13-11.13 6.147 0 11.13 4.982 11.13 11.13 0 6.146-4.983 11.128-11.13 11.128zM9.089 4.597l-.574 2.205-.597-2.205h-.885c.178.52.363 1.043.54 1.565.27.784.438 1.374.514 1.776v2.275h.841V7.938l1.012-3.34h-.85zm3.098 2.795c0-.446-.077-.774-.236-.986-.209-.286-.505-.429-.883-.429-.379 0-.675.143-.884.43-.162.212-.237.539-.237.985v1.466c0 .444.075.775.237.984.21.286.505.429.884.429s.674-.143.883-.429c.16-.21.236-.54.236-.984V7.392zm2.804-1.364h-.758v3.199c-.168.237-.327.355-.48.355-.1 0-.16-.06-.177-.178-.01-.025-.01-.117-.01-.295V6.03h-.755v3.308c0 .296.026.496.066.623.077.211.245.311.49.311.277 0 .563-.168.866-.514v.456h.758V6.028zm2.576 6.017a1.57 1.57 0 00-1.343-1.221c-1.54-.171-3.097-.173-4.65-.171-1.55-.002-3.11 0-4.65.17-.649.074-1.19.56-1.34 1.222-.217.94-.22 1.967-.22 2.935 0 .967 0 1.995.216 2.934a1.57 1.57 0 001.342 1.221c1.54.172 3.099.173 4.65.172 1.553 0 3.11 0 4.65-.172a1.57 1.57 0 001.342-1.22c.217-.94.217-1.968.217-2.935 0-.968.002-1.995-.214-2.935zm-.902 5.112c-.208.301-.515.45-.907.45-.393 0-.692-.142-.91-.425-.158-.207-.239-.534-.239-.973v-1.451c0-.443.072-.766.23-.977.218-.283.516-.424.9-.424.377 0 .675.14.885.424.157.21.232.534.232.977v.857h-1.501v.735c0 .383.127.574.383.574.186 0 .293-.1.336-.3.007-.041.017-.208.017-.509h.765v.11c0 .242-.01.407-.016.483a1.07 1.07 0 01-.175.449zm-1.309-2.167h.75v-.382c0-.384-.125-.575-.374-.575-.25 0-.376.191-.376.575v.382zm-2.007 2.617c-.267 0-.525-.15-.776-.459v.402h-.75v-5.559h.75v1.815c.242-.298.5-.45.776-.45.298 0 .5.158.6.47.05.166.075.44.075.832v1.649c0 .382-.025.658-.076.833-.1.308-.301.467-.599.467zm-.075-3.009c0-.374-.11-.565-.326-.565-.124 0-.25.059-.375.182v2.524c.126.126.251.185.375.185.216 0 .326-.185.326-.558v-1.768zm-2.851 2.5c-.299.341-.582.509-.858.509-.241 0-.408-.1-.484-.309-.04-.125-.066-.323-.066-.615v-3.275h.75v3.049c0 .175 0 .267.007.291.02.117.076.176.176.176.151 0 .308-.116.475-.351v-3.165h.751v4.142h-.751v-.453zm-2.416.452h-.835v-4.777H6.29v-.782h2.616v.782h-.899v4.777zm3.06-7.968c-.244 0-.362-.194-.362-.582V7.24c0-.386.118-.58.363-.58.243 0 .36.194.36.58V9c0 .388-.117.582-.36.582z">
+            </path>
+        </symbol>
+    </svg>
+    <!-- =======================
+    #END SVG SPRITES
+============================ -->
+
+
+    <!-- =======================
+            #END BODY
+    ============================ -->
+    <!-- ==#BOOTSTRAP PROPPER JS==-->
+    <script type="text/javascript" src="/packages/bootstrap/js/bootstrap.propper.min.js"></script>
+    <!-- ==#BOOTSTRAP JS==-->
+    <script type="text/javascript" src="/packages/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ==#SLICK== -->
+    <script type="text/javascript" src="/packages/slick/slick.min.js"></script>
+    <!-- ==MAIN.JS== -->
+    <script type="text/javascript" src="/javascripts/script.js"></script>
+</body>
+
+</html>

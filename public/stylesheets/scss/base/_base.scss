@@ -1,0 +1,345 @@
+/*******************************************************************************************************************************************************************************************************\
+
+                                           DO NOT TOUCH THIS CODE
+
+\********************************************************************************************************************************************************************************************************/
+
+/***********************************************************************************************\
+#1. Gloabal 
+\***********************************************************************************************/
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $site-font, sans-serif;
+    color: $primary-font;
+    overflow-x: hidden;
+}
+
+.body-wrapper {
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+    @include xs-min {
+        padding-top: 40px;
+    }
+    @include xs {
+        padding-top: 30px;
+    }
+}
+.form-page-wrapper {
+    @include lg-min {
+        padding-top: 125px;
+        padding-bottom: 190px;
+    }
+    @include md-min {
+        @include lg {
+            padding-top: 125px;
+            padding-bottom: 180px;
+        }
+    }
+    @include md {
+        padding-top: 80px;
+        padding-bottom: 150px;
+    }
+}
+.site-container {
+    @media (min-width: 1260px) {
+        max-width: 1210px;
+    }
+}
+
+.right-aligned-conatiner-desk {
+    @include sm {
+        padding-left: 1rem !important;
+    }
+}
+
+/* ===#FOOTER BOTTOM ALIGN : USED FOR CONTACT PAGE */
+.footerAlignment {
+    min-height: 100vh;
+    padding-bottom: 18rem;
+
+    .page-footer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        width: 100%;
+    }
+}
+
+/* ===================
+    #SPACER CLASSES
+====================== */
+.spacer-10 {
+    height: 10px;
+}
+
+.spacer-20 {
+    height: 20px;
+}
+
+.spacer-30 {
+    height: 30px;
+}
+
+.spacer-40 {
+    height: 40px;
+
+    @include sm {
+        height: 30px;
+    }
+}
+
+.spacer-60 {
+    @include sm-min {
+        height: 60px;
+    }
+    @include sm {
+        height: 40px;
+    }
+}
+.spacer-80 {
+    height: 80px;
+
+    @include sm {
+        height: 40px;
+    }
+}
+
+.spacer-100 {
+    height: 100px;
+
+    @include sm {
+        height: 80px;
+    }
+}
+
+/* =====================================
+    #FONT_SIZE CLASSES(with line height)
+======================================== */
+.font-size-26 {
+    font-size: 26px;
+}
+.font-size-23 {
+    font-size: 23px;
+    @include xs {
+        font-size: 18px;
+    }
+}
+.font-size-22 {
+    @include xs-min {
+        font-size: 22px;
+        line-height: 38px;
+    }
+    @include xs {
+        font-size: 12px;
+        line-height: 21px;
+    }
+}
+.font-size-18 {
+    @include xs-min {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    @include xs {
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
+.font-size-16 {
+    @include xs-min {
+        font-size: 16px;
+    }
+    @include xs {
+        font-size: 12px;
+    }
+}
+.font-size-12 {
+    font-size: 12px;
+}
+.primary-title {
+    color: $font-color4;
+    display: table;
+    @include md-min {
+        &--underline,
+        &--underline-center {
+            &:after {
+                content: "";
+                width: 40px;
+                height: 4px;
+                background-color: $primary-color;
+                margin-top: 9px;
+                display: block;
+                border-radius: 5px;
+            }
+        }
+        &--underline-center {
+            &:after {
+                content: "";
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+    @include xs-min {
+        font-size: 37px;
+        letter-spacing: -0.4625px;
+    }
+    @include xs {
+        font-size: 22px;
+    }
+}
+.text-highlighter {
+    display: flex;
+    font-weight: bold;
+    height: 100%;
+    &:before {
+        content: "";
+        width: 4px;
+        background-color: $primary-color;
+        border-radius: 5px;
+        display: block;
+        margin-right: 19px;
+    }
+    &__col {
+        margin-bottom: 25px;
+    }
+    @include xs-min {
+        font-size: 16px;
+
+        line-height: 21px;
+    }
+    @include xs {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+/* ====================
+    #FONT WEIGHT
+======================= */
+.font-weight-400 {
+    font-weight: 400;
+}
+
+/* ===================
+    #COLOR CLASSES
+====================== */
+.primary-color {
+    color: $primary-color;
+}
+.primary-font-color {
+    color: $primary-font;
+}
+.secondary-font-color {
+    color: $secondary-font;
+}
+
+/* ====================
+    #VECTOR FILL
+======================= */
+.fill-primary {
+    fill: $font-color3;
+}
+.fill-secondary {
+    fill: #fff;
+}
+/* ===================
+    #BG CLASSES
+====================== */
+.primary-bg {
+    background-color: $primary-bg;
+}
+.secondary-bg {
+    background-color: $secondary-bg;
+}
+/* ======================
+  #VERTICAL ALIGNMENT
+====================== */
+.vertical-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+
+    .vertical-table__cell {
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/* =======================
+    #BULLET LIST
+========================== */
+.bullet-list {
+    li {
+        // font-weight: bold;
+        color: rgba($color: $primary-font, $alpha: 0.721569);
+        letter-spacing: 0.33px;
+        display: flex;
+        align-items: baseline;
+        text-align: left;
+        padding-bottom: 5px;
+        font-size: 12px;
+        &:before {
+            content: "";
+            min-width: 6px;
+            min-height: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $secondary-color;
+            display: inline-block;
+            margin-right: 14px;
+        }
+    }
+}
+
+/* ====#FILE PREVIEW==== */
+.file-preview {
+    &__label {
+        color: rgba($color: $secondary-bg, $alpha: 0.4);
+        font-size: 10px;
+    }
+    &__input {
+        position: absolute;
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+    }
+    &__icon {
+        margin-top: 8px;
+        // margin-bottom: 10px;
+    }
+    &__message {
+        font-size: 10px;
+        color: #1865ff;
+    }
+}
+.scrollspy-trigger {
+    padding-top: 122px;
+    margin-top: -122px;
+    &#services {
+        margin-top: -200px;
+        padding-top: 210px;
+    }
+    @include xs {
+        padding-top: 60px;
+        margin-top: -60px;
+        &#services {
+            margin-top: -150px;
+            padding-top: 150px;
+        }
+    }
+}
+
+/*******************************************************************************************************************************************************************************************************\
+
+                                           END OF DO NOT TOUCH THIS CODE
+
+\********************************************************************************************************************************************************************************************************/

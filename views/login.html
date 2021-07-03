@@ -1,0 +1,38 @@
+<div class="form-page-wrapper">
+    <div class="container form-page-container">
+        <div class="row ">
+            <div class="col-lg-6 d-none d-lg-block">
+                <img class="pt-5 img-fluid" src="/images/vectors/logo-vector.svg" alt="SMVV EDUTECH ADVISORY">
+            </div>
+            <div class="col-lg-6">
+                {{message}} 
+                <div class="form">
+                    <h2 class="form__title">Log In</h2>
+                    <form action="/auth_login" method="POST">
+
+                        <div class="form-wrapper">
+                            <div class="form__input-wrapper">
+                                <input class="form__input" type="text" id="email" name="email" required>
+                                <label class="form__label" for="email">Email</label>
+                            </div>
+                            <!-- ==#ERROR MSG HERE== -->
+                            <!-- <p class="error-msg">Error msg</p> -->
+                            <div class="form__input-wrapper">
+                                <input class="form__input loginPassword" type="password" id="password" name="password" required>
+                                <label class="form__label" for="password">Password</label>
+                                <span class="password-toggler d-block"><img src="/images/icons/eye.svg"
+                                        alt="eye"></span>
+                            </div>
+                            <!-- ==#ERROR MSG HERE== -->
+                            <!-- <p class="error-msg">Error msg</p> -->
+                            <button class="primary-button primary-button--full-width" type="submit">Log In</button>
+                        </div>
+                    </form>
+                    <button class="form__forgot-link">Forgot Password?</button>
+                    <p class="form__footer">Don’t have an account? <a class="form__footer-link" href="/sign-up">Sign
+                            up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

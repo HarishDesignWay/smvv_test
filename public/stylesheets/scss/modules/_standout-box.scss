@@ -1,0 +1,97 @@
+.standout-box {
+    border-radius: 15px;
+    box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.0588235);
+    max-width: 540px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 480px;
+    padding: 45px;
+    @include lg-min {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    @include lg {
+        @include md-min {
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+    }
+    @include md {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 45px 30px;
+    }
+    @include sm {
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    // @include xs-min {
+    //     padding: 45px 20px;
+    // }
+    // @include xs {
+    //     padding: 44px 20px;
+    // }
+    //#TITLE
+    &__title {
+        font-weight: bold;
+        @include xs-min {
+            font-size: 26px;
+        }
+        @include xs {
+            font-size: 20px;
+        }
+    }
+    &__sub-title {
+        letter-spacing: 0.555555px;
+        color: $secondary-color;
+        font-weight: bold;
+        @include md-min {
+            min-height: 54px;
+        }
+        @include xs-min {
+            font-size: 20px;
+        }
+        @include xs {
+            font-size: 16px;
+        }
+        &--16 {
+            font-size: 16px;
+        }
+    }
+    //#text
+    &__text {
+        color: rgba($color: $primary-font, $alpha: 0.721569);
+        // font-weight: bold;
+        @include md-min {
+            min-height: 54px;
+        }
+        @media (max-width: 991px) and (min-width: 768px) {
+            min-height: 72px;
+        }
+    }
+}
+
+.standout-box__text--margin{
+    margin-bottom: 40px;
+    @include sm{
+        margin-bottom: 1rem;
+    }
+    @include lg-min{
+        margin-bottom: 16px;  
+    }
+    @include lg{
+        margin-bottom: 16px;  
+    }
+}
+@media (min-width: 1268px){
+.standout-box__text--margin {
+    margin-bottom: 35px;
+    }
+}

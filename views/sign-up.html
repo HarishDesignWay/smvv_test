@@ -1,0 +1,50 @@
+<div class="form-page-wrapper">
+    <div class="container form-page-container">
+        <div class="row ">
+            <div class="col-lg-6 d-none d-lg-block">
+                <img class="pt-5 img-fluid" src="/images/vectors/logo-vector.svg" alt="SMVV EDUTECH ADVISORY">
+            </div>
+            <div class="col-lg-6">
+                {{message}}
+                <div class="form">
+                    <h2 class="form__title">Sign Up</h2>
+                    <form action="/auth_reg" method="POST">
+
+                        <div class="form-wrapper">
+                            <div class="form__input-wrapper">
+                                <input class="form__input" type="text" id="name" name="name" required>
+                                <label class="form__label" for="name">Name</label>
+                            </div>
+                            <!-- ==#ERROR MSG HERE== -->
+                            <!-- <p class="error-msg">Error msg</p> -->
+                            <div class="form__input-wrapper">
+                                <input class="form__input" type="email" id="email" name="email" required>
+                                <label class="form__label" for="email">Email</label>
+                            </div>
+                            <!-- ==#ERROR MSG HERE== -->
+                            <div class="form__input-wrapper">
+                                <input class="form__input" type="text" id="contactNumber" name="contactNumber" min="10" max="10 " required>
+                                <label class="form__label" for="contactNumber">Contact Number</label>                                
+                                <img class="img-fluid d-block" src="/images/icons/whatsapp.svg" alt="whatsapp">
+                            </div>
+                            <!-- <p class="error-msg">Error msg</p> -->
+                            <div class="form__input-wrapper">
+                                <input class="form__input loginPassword" type="password" id="password" name="password" required>
+                                <label class="form__label" for="password">Password</label>
+                            </div>
+                            <div class="form__input-wrapper">
+                                <input class="form__input loginPassword" type="password" id="cpassword" name="cpassword" required>
+                                <label class="form__label" for="cpassword"> Confirm Password</label>
+                            </div>
+                            <!-- ==#ERROR MSG HERE== -->
+                            <!-- <p class="error-msg">Error msg</p> -->
+                            <button class="primary-button primary-button--full-width" type="submit">Sign Up</button>
+                        </div>
+                    </form>
+                    <p class="form__footer">Already have an account?<a class="form__footer-link" href="/login">Log
+                            in</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

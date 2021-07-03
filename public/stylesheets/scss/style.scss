@@ -1,0 +1,40 @@
+/*-----------------------------------------------------------------------------------
+
+	Theme Name: Layouts
+    Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, harum!
+	Author: 
+	Author URI: 
+	Version: 1.0 alpha
+
+-----------------------------------------------------------------------------------*/
+
+/*Base Rules Start*/
+
+@import "base/variables";
+@import "base/default-color";
+@import "base/mixin";
+@import "base/base";
+@import "base/reset";
+@import "base/details-pages";
+/*==============================================*/
+
+/*Modules Start*/
+@import "modules/navbar";
+@import "modules/footer";
+@import "modules/buttons"; //#BUTTONS
+@import "modules/animation"; //Animation
+@import "modules/forms"; //Forms
+@import "modules/accordion"; //Review slider
+@import "modules/standout-box"; //Standout box
+@import "modules/cards"; //Standout box
+@import "modules/vectors"; //Vectors
+@import "modules/slider"; //Slider
+
+/*==============================================*/
+
+/*Layouts Starts*/
+
+@import "layout/index"; //Home Page
+/*End*/
+
+/*==============================================*/

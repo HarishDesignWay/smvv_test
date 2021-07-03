@@ -1,0 +1,72 @@
+$footerText: #eeeeee;
+.site-footer {
+    background-color: $secondary-bg;
+    color: $footerText;
+    padding: 60px 0;
+}
+
+.footer-link {
+    color: $footerText;
+    font-size: 18px;
+    @include xs {
+        font-size: 12px;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        color: $footerText;
+    }
+}
+
+.footer-links-wrapper {
+    li {
+        margin-bottom: 16px;
+    }
+    @include xs {
+        li {
+            margin-bottom: 7px;
+        }
+        .social-icons__link:not(:last-child) {
+            margin-right: 3px;
+        }
+    }
+}
+
+.footer-text {
+    line-height: 32px;
+    @include xs {
+        line-height: 20px;
+    }
+}
+
+//#FOOTER BANNER
+.footer-banner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @include sm-min {
+        background: $primary-bg;
+    }
+    @include sm {
+        text-align: center;
+        .primary-button {
+            max-width: 180px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+        }
+    }
+    &__text {
+        color: #252525;
+        @include md-min {
+            font-size: 37px;
+        }
+        @include md {
+            @include sm-min {
+                font-size: 27px;
+            }
+        }
+        @include sm {
+            font-size: 22px;
+        }
+    }
+}

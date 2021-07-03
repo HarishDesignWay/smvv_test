@@ -1,0 +1,136 @@
+.dots-slider {
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+
+        li {
+            button {
+                color: transparent;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: rgba(124, 124, 124, 0.318837);
+                transition: background-color 300ms linear;
+                margin: 0 11px;
+                border: 0;
+            }
+            &.slick-active {
+                button {
+                    background-color: $secondary-color;
+                }
+            }
+        }
+    }
+    &--hiden-mobile {
+        @include md {
+            .slick-dots {
+                display: none !important;
+            }
+        }
+    }
+}
+
+//#SLIDER EQUAL HEIGHT SLIDES
+.equal-height-slides {
+    .slick-track {
+        display: flex;
+    }
+    .slick-slide {
+        height: inherit !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .slick-slide > div {
+        height: 100%;
+    }
+}
+
+//#CARDS SLIDER
+.cards-slider {
+    .slick-slide {
+        margin: 60px 25px;
+        @media (max-width: 991px) and (min-width: 768px) {
+            margin: 20px 20px;
+        }
+        @include xs {
+            margin: 20px 20px;
+        }
+    }
+    &__slide {
+        padding: 34px 39px;
+        box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.0588235);
+        border-radius: 29px;
+        height: 100%;
+        @include md {
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.0588235);
+        }
+        @media (max-width: 991px) and (min-width: 768px) {
+            padding: 34px 19px;
+        }
+        @include xs {
+            padding: 34px 19px;
+        }
+    }
+    &__img {
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-right: 17px;
+        max-width: 60px;
+        min-width: 60px;
+    }
+    &__name {
+        font-size: 20px;
+        font-weight: bold;
+        @include xs {
+            font-size: 16px;
+        }
+    }
+    &__occupation {
+        color: rgba($color: $primary-font, $alpha: 0.65);
+        font-size: 16px;
+        font-weight: 700;
+        @media (max-width: 1199px) {
+            font-size: 12px;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        // font-weight: bold;
+        color: rgba($color: $primary-font, $alpha: 0.721569);
+        margin-top: 32px;
+        @include xs {
+            font-size: 12px;
+        }
+    }
+}
+
+//#CERTIFCATE SLIDER
+.certificate-slider {
+    text-align: center;
+    .slider__slide {
+        max-width: 64%;
+    }
+}
+
+//#PARTIAL SLIDE VISABEL
+.cards-slider {
+    @media (max-width: 1931px) and (min-width: 1200px) {
+        .slick-list.draggable {
+            padding-right: 180px;
+        }
+    }
+    @media (max-width: 1199px) and (min-width: 992px) {
+        .slick-list.draggable {
+            padding-right: 140px;
+        }
+    }
+    @media (max-width: 991px) and (min-width: 768px) {
+        .slick-list.draggable {
+            padding-right: 90px;
+        }
+    }
+}

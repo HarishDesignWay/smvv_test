@@ -1,0 +1,71 @@
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
+
+/*$baseline: 16px*/
+
+$baseline: 16px;
+
+/*$site-font: 'PT Serif'*/
+
+$site-font: "PT Serif", serif;
+
+/************************************************************************************************************\
+ #Media Queries Base Variables 
+\************************************************************************************************************/
+
+/*-------#Max Variables--------*/
+
+/* $xs: 575px; Mobile Displays and Smaller*/
+
+$xs: 575px;
+
+/* $sm: 767px; Tablets and Smaller */
+
+$sm: 767px;
+
+/* $md: 991px; Medium Displays and Smaller */
+
+$md: 991px;
+
+/* $lg: 1199px; Large Displays and smaller */
+
+$lg: 1199px;
+
+/* $xl: 1440px; extra Large Displays and smaller */
+
+$xl: 1440px;
+
+/*--------#Min Variables-----------*/
+
+/*$xs-min: 576px; Mobile Displays and Larger */
+
+$xs-min: 576px;
+
+/* $sm-min: 768px; Tablets Displays and Larger */
+
+$sm-min: 768px;
+
+/* $md-min: 992px; Medium Displays and Larger */
+
+$md-min: 992px;
+
+/* $lg-min: 1200px; Large Displays and Larger */
+
+$lg-min: 1200px;
+
+/*------Custom Media Queries----------*/
+
+/* $sz-1500: 1500px; Screen Size 1500px */
+
+$sz-1500: 1501px;
+$sz-1500-max: 1500px;
+
+/* $sz-375: 375px; Screen Size 1500px */
+
+$sz-375: 376px;
+$sz-375-max: 375px;
+
+/*------------------------------------*\
+    #END OF VARIABLES
+\*------------------------------------*/
