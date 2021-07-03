@@ -80,7 +80,7 @@ router.post("/auth_login", function (req, res, next) {
 console.log(result.rows[0].password);
 if (password == (result.rows[0].password)) {
       req.session.email = email;
-      if (email == "admin.smvv@gmail.com") {
+      if (email == "admin@gmail.com") {
         res.redirect("https://smvv-admin.herokuapp.com/advisory");
         
       } else {
